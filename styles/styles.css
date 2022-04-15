@@ -1,0 +1,86 @@
+html {
+  font-family: Helvetica, sans-serif;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #2266ff;
+}
+
+label {
+  font-weight: 700;
+  color: #2266ff;
+}
+
+input {
+  margin-top: 1rem;
+  padding-left: 0.2rem;
+  border-radius: 1rem;
+  outline: none;
+  border: green solid 0.2rem;
+}
+
+input:focus {
+  background: rgba(0, 128, 0, 0.3);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  outline: none;
+  border: #229922 solid 0.3rem;
+  color: #229922;
+  font-weight: 700;
+  background: white;
+  width: 10rem;
+  height: 2.5rem;
+}
+
+button:hover {
+  color: white;
+  background: #229922;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.joke-item {
+  padding: 1rem;
+  display: none;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0.2rem 0.2rem gray;
+}
+
+.joke-item:nth-child(odd) {
+  background: #777777;
+  border: #999999 solid 1rem;
+}
+
+.joke-item:nth-child(even) {
+  background: #2277bb;
+  border: #2266ff solid 1rem;
+}
